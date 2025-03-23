@@ -10,7 +10,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -27,6 +27,7 @@ header {
 
 .header-content p {
     font-size: 1.2em;
+    color: #ffdd57; /* Light Yellow for contrast */
 }
 
 /* Navigation Bar */
@@ -40,7 +41,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -62,7 +63,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Sections */
+/* Section Content */
 .section-content {
     background: white;
     margin: 20px auto;
@@ -70,6 +71,40 @@ nav ul li a:hover {
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Section Titles */
+h2 {
+    color: #d32f2f; /* Dark Red */
+}
+
+/* About Me Section */
+#about p {
+    color: #0077cc; /* Blue */
+}
+
+/* Education Section */
+#education p {
+    color: #009688; /* Teal */
+    font-weight: bold;
+}
+
+/* Skills Section */
+#skills ul {
+    color: #673ab7; /* Purple */
+    font-weight: bold;
+}
+
+/* Projects Section */
+#projects a {
+    color: #e91e63; /* Pink */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#projects a:hover {
+    text-decoration: underline;
 }
 
 /* Resume Button */
@@ -99,7 +134,7 @@ footer {
 /* Responsive Design */
 @media screen and (max-width: 600px) {
     nav ul {
-        flex-direction: column; /* Stack menu items */
+        flex-direction: column;
     }
 
     nav ul li {
@@ -113,7 +148,7 @@ footer {
     }
 
     .download-button {
-        width: 80%; /* Adjust for smaller screens */
+        width: 80%;
         font-size: 14px;
         padding: 8px 15px;
     }
