@@ -1,163 +1,159 @@
 /* General Styles */
-* {
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f4f4f4;
-    color: #333;
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Lavender to pink gradient */
+    color: #333; /* Dark text for contrast */
     text-align: center;
-    overflow-x: hidden;
 }
 
-/* Header */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Header Styles */
 header {
-    background: linear-gradient(to right, black, red);
-    color: white;
-    padding: 20px 0;
+    background-color: #4b0082; /* Deep indigo header */
+    color: #fff;
+    padding: 2.5rem 0;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header-content h1 {
-    font-size: 2em;
-    margin-bottom: 5px;
+    font-size: 3.5rem; /* Increased size */
+    font-weight: bold;
+    margin: 0;
 }
 
 .header-content p {
-    font-size: 1.2em;
-    color: #ffdd57; /* Light Yellow for contrast */
+    font-size: 1.5rem; /* Enhanced subtitle size */
+    margin-top: 5px;
 }
 
-/* Navigation Bar */
+/* Navigation Styles */
+/* Navigation Styles */
 nav {
-    background: linear-gradient(to right, black, red);
-    text-align: center;
-    padding: 10px 0;
+    background-color: #008080; /* Rich teal for nav */
+    color: #fff;
+    padding: 1.2rem 0;
 }
 
 nav ul {
     list-style-type: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 5px 15px;
+    margin: 0 20px; /* Add horizontal space between nav items */
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
-    padding: 10px 15px;
-    display: block;
-    transition: background 0.3s ease-in-out;
+    color: #fff;
+    font-size: 1.3rem; /* Slightly larger for better visibility */
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
+    color: #fc5c7d; /* Change to bright pink on hover */
 }
-
-/* Section Content */
+/* Section Content Styles */
 .section-content {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff; /* White background for sections */
+    padding: 3rem;
+    margin: 3rem auto;
+    width: 75%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     text-align: left;
+    font-size: 1.3rem; /* Enhanced section text size */
+    line-height: 1.8; /* Increased line height for better readability */
 }
 
-/* Section Titles */
-h2 {
-    color: #d32f2f; /* Dark Red */
-}
-
-/* About Me Section */
-#about p {
-    color: #0077cc; /* Blue */
-}
-
-/* Education Section */
-#education p {
-    color: #009688; /* Teal */
-    font-weight: bold;
-}
-
-/* Skills Section */
-#skills ul {
-    color: #673ab7; /* Purple */
-    font-weight: bold;
-}
-
-/* Projects Section */
-#projects a {
-    color: #e91e63; /* Pink */
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#projects a:hover {
-    text-decoration: underline;
-}
-
-/* Resume Button */
-.download-button {
-    display: inline-block;
-    background: linear-gradient(to right, black, red);
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+.section-content h2 {
+    font-size: 2.2rem; /* Bigger section titles */
+    color: #fc5c7d; /* Bright pink for section titles */
     text-align: center;
-    width: fit-content;
-    max-width: 90%;
-    margin: 10px auto;
-    display: block;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4b0082; /* Deep indigo underline */
+    padding-bottom: 10px;
 }
 
-/* Footer */
+/* Button Styles */
+.download-button {
+    background-color: #6a82fb; /* Lavender button color */
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    display: block; /* Places button directly below the heading */
+    margin: 10px auto 0; /* Keeps button centered and close */
+    width: fit-content; /* Button width fits text */
+    transition: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.download-button:hover {
+    background-color: #fc5c7d; /* Bright pink on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Skills Container Styles */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+}
+
+.technical-skills, .soft-skills {
+    flex: 1;
+    background: #f9f9f9; /* Light background for skill boxes */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.technical-skills h3, .soft-skills h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #6a82fb; /* Lavender underline */
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.technical-skills ul, .soft-skills ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.technical-skills li, .soft-skills li {
+    background: #eef2ff; /* Light background for list items */
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
 footer {
-    background: linear-gradient(to right, black, red);
-    color: white;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 1.2rem 0;
+    background-color: #222; /* Dark footer background */
+    color: #fff;
+    font-size: 1.2rem;
 }
-
-/* Responsive Design */
-@media screen and (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul li a {
-        font-size: 1em;
-        padding: 8px;
-    }
-
-    .download-button {
-        width: 80%;
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-
-    .header-content h1 {
-        font-size: 1.8em;
-    }
-
-    .header-content p {
-        font-size: 1em;
-    }
+.section-divider {
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(to right, #6a82fb, #fc5c7d); /* Gradient matching the theme */
+    margin: 40px auto; /* Center the divider */
+    border-radius: 5px; /* Rounded edges */
 }
